@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- JBoss, Home of Professional Open Source Copyright 2013, Red Hat, Inc. and/or its affiliates, and individual contributors by the @authors tag. See 
+	the copyright.txt in the distribution for a full listing of individual contributors. Licensed under the Apache License, Version 2.0 (the "License"); you 
+	may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless 
+	required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS 
+	OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+	<display-name>Thoth - Information for everyone!!</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+	    <servlet-mapping>
+        <servlet-name>javax.ws.rs.core.Application</servlet-name>
+        <url-pattern>/rest/*</url-pattern>
+    </servlet-mapping>
+
+	<!-- <context-param> <param-name>resteasy.scan</param-name> <param-value>false</param-value> </context-param> <context-param> <param-name>resteasy.scan.providers</param-name> 
+		<param-value>false</param-value> </context-param> <context-param> <param-name>resteasy.scan.resources</param-name> <param-value>false</param-value> </context-param> -->
+
+	<!-- <context-param> <param-name>resteasy.resources</param-name> <param-value>com.wordnik.swagger.jaxrs.listing.ApiListingResourceJSON</param-value> </context-param> 
+		<context-param> <param-name>resteasy.providers</param-name> <param-value>com.wordnik.swagger.jaxrs.listing.ApiDeclarationProvider,com.wordnik.swagger.jaxrs.listing.ResourceListingProvider</param-value> 
+		</context-param> <listener> <listener-class>org.jboss.resteasy.plugins.server.servlet.ResteasyBootstrap</listener-class> </listener> <servlet> <servlet-name>resteasy-servlet</servlet-name> 
+		<servlet-class>org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher</servlet-class> </servlet> <servlet> <servlet-name>DefaultJaxrsConfig</servlet-name> 
+		<servlet-class>com.wordnik.swagger.jaxrs.config.DefaultJaxrsConfig</servlet-class> <init-param> <param-name>api.version</param-name> <param-value>1.0.0</param-value> 
+		</init-param> <init-param> <param-name>swagger.api.basepath</param-name> <param-value>http://localhost:8080/thoth-rest</param-value> </init-param> <load-on-startup>2</load-on-startup> 
+		</servlet> -->
+</web-app>

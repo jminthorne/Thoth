@@ -1,0 +1,9 @@
+{
+  "apiVersion" : "1",
+  "basePath" : "http:localhost:8080/thoth-rest/apidocs",
+  "apis" : [ {
+    "path" : "/.{format}",
+    "description" : ""
+  } ],
+  "swaggerVersion" : "1.1"
+}

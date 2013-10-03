@@ -1,0 +1,23 @@
+{
+  "apiVersion" : "1",
+  "swaggerVersion" : "1.1",
+  "basePath" : "/com/evil/thoth/ws/",
+  "resourcePath" : "",
+  "apis" : [ {
+    "path" : "/json",
+    "description" : "",
+    "operations" : [ {
+      "httpMethod" : "GET",
+      "nickname" : "getHelloWorldJSON",
+      "responseClass" : "string"
+    } ]
+  }, {
+    "path" : "/xml",
+    "description" : "",
+    "operations" : [ {
+      "httpMethod" : "GET",
+      "nickname" : "getHelloWorldXML",
+      "responseClass" : "string"
+    } ]
+  } ]
+}
